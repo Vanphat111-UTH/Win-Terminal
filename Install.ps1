@@ -43,6 +43,9 @@ Function installNerdFont {
     Write-Host "Cascadia Code Nerd Font has installed!" -ForegroundColor Green
 }
 
+
+#=====Main=====#
+
 chocoCheck
 setUpOh-my-posh
 installNerdFont
