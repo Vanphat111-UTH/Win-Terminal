@@ -47,3 +47,6 @@ chocoCheck
 setUpOh-my-posh
 installNerdFont
 installPSModule
+
+
+Write-Host "Restart powershell to see the changes."-ForegroundColor Green
