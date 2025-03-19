@@ -17,12 +17,14 @@ if ($errorOccurred) {
 
 Function setUpOh-My-Posh {
     choco install oh-my-posh -y --ignore-checksums
-    cp .\Config_File\atomicBit-remake.omp.json C:\Program Files (x86)\oh-my-posh\themes
-    cp .\Config_File\Microsoft.PowerShell_profile.ps1 ~\Documents\WindowsPowerShell
+    cp ".\Config_File\atomicBit-remake.omp.json" "C:\Program Files (x86)\oh-my-posh\themes"
+    cp ".\Config_File\Microsoft.PowerShell_profile.ps1" "~\Documents\WindowsPowerShell"
+    Write-Host "Setup Oh-My-Posh successfull." -ForegroundColor Green
 }
 
 Function installPSModule {
     Install-Module -Name Terminal-Icons -Repository PSGallery
+    Write-Host "Install PS module successfull." -ForegroundColor Green
 }
 
 Function installNerdFont {
@@ -46,6 +48,7 @@ Function installNerdFont {
 Function installWinfetch {
     choco install winfetch -y --ignore-checksums
     cp ".\Config_File\config.ps1" "~\.config\winfetch"
+    Write-Host "Setup winfetch successfull." -ForegroundColor Green
 }
 
 #=====Main=====#
@@ -57,4 +60,4 @@ installPSModule
 installWinfetch
 
 
-Write-Host "Restart powershell to see the changes."-ForegroundColor Green
+Write-Host "Restart powershell to see the changes." -ForegroundColor Green
