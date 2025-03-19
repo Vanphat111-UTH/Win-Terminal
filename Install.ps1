@@ -45,6 +45,7 @@ Function installNerdFont {
 
 Function installWinfetch {
     choco install winfetch -y --ignore-checksums
+    cp ".\Config_File\config.ps1" "~\.config\winfetch"
 }
 
 #=====Main=====#
