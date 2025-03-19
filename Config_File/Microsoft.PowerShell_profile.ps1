@@ -46,6 +46,7 @@ Import-Module -Name Terminal-Icons
 Set-Alias -Name npp -Value 'D:\notepad++\notepad++.exe'
 Set-Alias -Name SD -Value shutdown
 Set-Alias -Name vscode -Value '~\AppData\Local\Programs\Microsoft VS Code\code.exe'
+Set-Alias -Name touch -Value New-Item
 Function lsa { Get-ChildItem -Force }
 
 

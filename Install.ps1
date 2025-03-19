@@ -1,18 +1,18 @@
 #=====Function=====#
 Function chocoCheck {
     try {
-    choco *>$null
-    $errorOccurred = $false
-} catch {
-    $errorOccurred = $true
-}
+        choco *>$null
+        $errorOccurred = $false
+    } catch {
+        $errorOccurred = $true
+    }
 
-if ($errorOccurred) {
-    Set-ExecutionPolicy AllSigned
-    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-} else {
-    echo "Choco has installed."
-}
+    if ($errorOccurred) {
+        Set-ExecutionPolicy AllSigned
+        Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+    } else {
+        echo "Choco has installed."
+    }
 }
 
 Function setUpOh-My-Posh {
