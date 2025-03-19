@@ -23,7 +23,8 @@ Function setUpOh-My-Posh {
 }
 
 Function installPSModule {
-    Install-Module -Name Terminal-Icons -Repository PSGallery
+    
+    Install-Module -Name Terminal-Icons -Repository PSGallery -Force
     Write-Host "Install PS module successfull." -ForegroundColor Green
 }
 
