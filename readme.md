@@ -13,6 +13,6 @@
 2. Set Execution Policy
     ```Powershell
     Set-ExecutionPolicy AllSigned -Scope CurrentUser -Force
-3. Run file Install.ps1
+3. Run file ``Install.ps1``
     ```Powershell
     cd Win-Terminal ; ./Install.ps1
