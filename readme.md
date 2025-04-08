@@ -12,7 +12,7 @@
     git clone https://github.com/Vanphat111-UTH/Win-Terminal.git
 2. Set Execution Policy
     ```Powershell
-    Set-ExecutionPolicy AllSigned -Scope CurrentUser -Force
+    Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 3. Run file ``Install.ps1``
     ```Powershell
     cd Win-Terminal ; ./Install.ps1
